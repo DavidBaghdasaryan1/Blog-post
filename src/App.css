@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Poppins:ital,wght@0,200;0,400;1,200;1,300;1,400&family=Roboto&display=swap');
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App.css */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a, nav button {
+  color: white;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Home.css */
+
+.homePage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.posts {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  width: calc(33.33% - 20px); 
+  box-sizing: border-box; 
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  flex: 1;
+}
+
+.deletePost {
+  flex-shrink: 0;
+}
+
+/* CreatePost.css */
+
+.createPostPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cpContainer {
+  width: 100%;
+  max-width: 400px; 
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.inputGp {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #3a76e2;
+}
+
+
+/* Login.css */
+
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-with-google-btn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .posts {
+    width: 100%; 
+  }
+
+  .cpContainer {
+    width: 90%;
+  }
+}
